@@ -3,17 +3,16 @@ require('../../../common/scripts/init')();
 
 
 },{"../../../common/scripts/init":2}],2:[function(require,module,exports){
-(function (global){
+(function (app){
 module.exports = (function(_this) {
   return function(opts) {
     if (opts == null) {
       opts = {};
     }
-    global.app = {};
     return app.x = 1;
   };
 })(this);
 
 
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+}).call(this,{"a":1,"b":2})
 },{}]},{},[1]);
