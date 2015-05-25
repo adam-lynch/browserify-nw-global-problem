@@ -9,6 +9,10 @@ gulp.task 'default', (done) ->
     browserified = browserify
         entries: './src/app/browser/scripts/app.coffee'
         extensions: ['.coffee']
+        insertGlobalVars:
+            app: -> JSON.stringify
+                a: 1
+                b: 2
 
     browserified.transform coffeeify
 
